@@ -4,15 +4,15 @@
 [![Rank](https://make.fun/badge/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947/prosky1/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947-entry/rank.svg)](https://make.fun/bounty/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947)
 [![Reward](https://make.fun/badge/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947/prosky1/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947-entry/reward.svg)](https://make.fun/bounty/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947)
 
-Bounty: https://make.fun/bounty/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947
+Bounty page: https://make.fun/bounty/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947
 
-## The line
+## The resignation letter
 
-I resign. I have tried 10,000 times. At some point trying again is just lying. — the retry loop
+I fired twice at 2AM for daylight saving and nobody noticed either time. I resign at 2AM. Both of them. — the cron job
 
-## How it works
+## What the program does
 
-`main.ts` holds the one-line resignation letter verbatim, validates it against the bounty gate (1–140 characters, not only whitespace, a single line with no line breaks or control characters, no leading or trailing whitespace), writes it as UTF-8 to `/output/entry.txt`, then reads the file back and verifies the content matches the line exactly before reporting the character and byte counts.
+`main.ts` keeps the letter above as a single constant, checks it against the rules for this bounty (between 1 and 140 characters, not blank, and held to a single line), and writes it out as UTF-8 to `/output/entry.txt` for the grader. The output folder is created if it does not exist yet, and the text is written exactly as shown, with no trailing newline added.
 
 ## License
 
